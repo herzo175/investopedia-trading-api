@@ -219,6 +219,7 @@ class Account:
         client.trade("GOOG", Action.buy, 10)
         client.trade("GOOG", Action.buy, 10, "Limit", 500)
         """
+        quantity = int(quantity)
 
         br = self.br
         trade_page = self.fetch('/simulator/trade/tradestock.aspx')
